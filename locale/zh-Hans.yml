@@ -1,0 +1,9 @@
+mattoid-store-check-in:
+  admin:
+    settings:
+      group-view: 对用户展示商品
+
+  forum:
+    title: 补签卡
+    label:
+      checkin-card: 补签卡
