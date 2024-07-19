@@ -5,6 +5,7 @@ use Flarum\Extend;
 use Mattoid\Store\Extend\StoreExtend;
 use Mattoid\StoreCheckIn\Attributes\UserAttributes;
 use Mattoid\StoreCheckIn\Goods\CheckInAfter;
+use Mattoid\StoreCheckIn\Goods\CheckInEnable;
 use Mattoid\StoreCheckIn\Goods\CheckInGoods;
 use Mattoid\StoreCheckIn\Goods\CheckInValidate;
 
@@ -20,7 +21,8 @@ return [
     (new StoreExtend('checkIn'))
         ->addStoreGoods(CheckInGoods::class)
         ->addValidate(CheckInValidate::class)
-        ->addAfter(CheckInAfter::class),
+        ->addAfter(CheckInAfter::class)
+        ->addEnable(CheckInEnable::class),
 
     (new Extend\ApiSerializer(BasicUserSerializer::class))
         ->attributes(UserAttributes::class),
