@@ -21,8 +21,8 @@ return [
     (new StoreExtend('checkIn'))
         ->addStoreGoods(CheckInGoods::class)
         ->addValidate(CheckInValidate::class)
-        ->addAfter(CheckInAfter::class)
-        ->addEnable(CheckInEnable::class),
+//        ->addEnable(CheckInEnable::class)
+        ->addAfter(CheckInAfter::class),
 
     (new Extend\ApiSerializer(BasicUserSerializer::class))
         ->attributes(UserAttributes::class),
