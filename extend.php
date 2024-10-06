@@ -24,6 +24,6 @@ return [
 //        ->addEnable(CheckInEnable::class)
         ->addAfter(CheckInAfter::class),
 
-    (new Extend\ApiSerializer(BasicUserSerializer::class))
-        ->attributes(UserAttributes::class),
+//    (new Extend\ApiSerializer(BasicUserSerializer::class))
+//        ->attributes(UserAttributes::class),
 ];
